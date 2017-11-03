@@ -18,6 +18,6 @@ The above two commands are included in the run-simple-iozone-job.sh. This can be
 
 # Notes
 If you run the job you will see the job/pod start, looking at the logs the initial test will start, the test does not complete. If you wish to run pod interactvely, uncomment the line below in simple-iozone-job.yml:
-  '''command: [ "/bin/bash", "-c", "/home/iozone/keep-alive.sh" ]'''
+```command: [ "/bin/bash", "-c", "/home/iozone/keep-alive.sh" ]```
 
 The pod will run in an endless loop, exec into the pod and run the script ./run-iozone.sh
